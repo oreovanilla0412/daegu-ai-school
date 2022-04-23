@@ -1,29 +1,56 @@
 <!doctype html> <!--이 문서가 html이라고 선언-->
 <html>
-<head></head>
-<title>WEB</title> <!--페이지 제목-->
-<meta charset="utf-8"> <!--언어 선언-->
+<head>
+    <title>WEB</title> <!--페이지 제목-->
+    <meta charset="utf-8"> <!--언어 선언-->
+    <style>
+        h1{
+            border-bottom: 10px solid orange;
+            padding: 30px;
+            text-decoration: none;
+        }
+
+        @media all and (min-width:580px){
+            #container{
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                
+            }
+        }
+
+        @media all and (max-width:580px){
+
+        }
+
+    </style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MFJM1EX3YJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MFJM1EX3YJ');
+</script>
+
 </head>
+
 <body>
-    <h1><a href="index.html">WEB</a> WEB</h1><!--heading의 크기 1~6까지 있고 6이 가장 작다-->
+    <h1><a href="index.html">WEB</a></h1><!--heading의 크기 1~6까지 있고 6이 가장 작다-->
     WWW is <u>World <strong>Wide</strong> Web.</u><br><!--u는 언더바, strong은 강조-->
+    <div id="container">
+        <ol><!--ul은 리스트화, ol은 리스트에 번호를 붙임-->
+            <li><a href="1.html">html</a></li>
+            <li><a href="2.html">css</a></li>
+            <li><a href="3.html">JavaScript</a></li><!--li*10 하면 리스트 10개 생성-->
+        </ol>
+        <div> 
+            <h2>>Welcome!</h2> 
+            Hello <a href="http://naver.com">WEB</a>
+        </div>
+    </div>    
 
-    <ol><!--ul은 리스트화, ol은 리스트에 번호를 붙임-->
-        <li><a href="1.html">html</a></li>
-        <li><a href="2.html">css</a></li>
-        <li><a href="3.html">JavaScript</a></li><!--li*10 하면 리스트 10개 생성-->
-    </ol>
-    <ul>
-        <li>오레오</li>
-        <li>바닐라</li>
-        <li>포테토</li>
-        <li>포카칩</li>
-    </ul>
-
-    Welcome! Hello <a href="http://naver.com">WEB</a>
-    <img class="fit-picture"
-        src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=80 width="200" height="100""
-        alt="Grapefruit slice atop a pile of other slices">
+    
         <div id="disqus_thread"></div>
         <script>
             /**
@@ -46,3 +73,5 @@
 
 </body>
 </html>
+
+
